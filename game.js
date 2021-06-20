@@ -40,3 +40,12 @@ onload = function () {
             this.state.start("GameState")
         }
     };
+
+    GameState = {
+        init: function() {
+            createGame();
+        },
+        update: function() {
+            updateState();
+        }
+    };
