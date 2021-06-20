@@ -30,3 +30,13 @@ onload = function () {
             game.load.spritesheet('flag', 'assets/flag.png', 33, 168);
             game.load.image('cloud', 'assets/cloud.png');
             game.load.image('grass', 'assets/grass.png');
+            game.load.image('tile', 'assets/tile.png');
+            game.load.image('pipe1', 'assets/pipe1.gif');
+            game.load.image('pipe2', 'assets/pipe2.gif');
+            game.load.image('castle', 'assets/castle.gif');
+            game.load.image('ground', 'assets/ground.png');
+        },
+        create : function () {
+            this.state.start("GameState")
+        }
+    };
