@@ -21,3 +21,12 @@ onload = function () {
             this.state.start("PreloadState");
         }
     };
+    
+    PreloadState = {
+        preload : function () {
+            game.load.spritesheet('enemy', 'assets/goomba_nmbtds.png', 16, 16);
+            game.load.spritesheet('mario', 'assets/mario_wjlfy5.png', 16, 16);
+            game.load.spritesheet('coin', 'assets/coin_iormvy.png', 16, 16);
+            game.load.spritesheet('flag', 'assets/flag.png', 33, 168);
+            game.load.image('cloud', 'assets/cloud.png');
+            game.load.image('grass', 'assets/grass.png');
