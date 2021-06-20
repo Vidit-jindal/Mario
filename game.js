@@ -1,1 +1,11 @@
-
+onload = function () {
+    steps = 16;
+    move_step = steps * 5;
+    fly_step = steps * 15;
+    ground_height = 0;
+    asset_height = 16;
+    platforms_array = [];
+    moves = [];
+    profit = [];
+    pos = 0;
+    onGround = true;
