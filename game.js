@@ -9,3 +9,15 @@ onload = function () {
     profit = [];
     pos = 0;
     onGround = true;
+
+    BootState = {
+        init : function () {
+            game.stage.backgroundColor = '#5c94fc';
+            game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+            // game.scale.pageAlignHorizontally = true;
+            // game.scale.pageAlignVertically = true;
+        },
+        create : function () {
+            this.state.start("PreloadState");
+        }
+    };
