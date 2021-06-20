@@ -49,3 +49,11 @@ onload = function () {
             updateState();
         }
     };
+    
+    
+    function createGame() {
+
+        platforms_array = [];
+        moves = [];
+        profit = [];
+
