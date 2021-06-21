@@ -56,4 +56,15 @@ onload = function () {
         platforms_array = [];
         moves = [];
         profit = [];
+        
+         game.world.setBounds(0,0,game_length,game_height);
+        game.physics.startSystem(Phaser.Physics.ARCADE);
+
+        ground_height = game.height - 2*asset_height;
+        clouds = game.add.group();
+        change = 15;
+        for (var i = 70; i < game_length; i+= 240) {
+            clouds.create(i, change + game.height / 6, 'cloud');
+            change *= -1;
+        }
 
