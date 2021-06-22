@@ -72,4 +72,8 @@ onload = function () {
         for (var i = 130; i < game_length; i+= 290) {
             grass.create(i, ground_height - steps, 'grass');
         }
+        
+        ground = game.add.tileSprite(0,ground_height, game_length, game.height, 'ground');
+        game.physics.arcade.enable(ground);
+        ground.body.immovable = true;
 
