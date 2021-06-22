@@ -79,4 +79,7 @@ onload = function () {
         
          coins = game.add.group();
         coins.enableBody = true;
+        
+        goombas = game.add.group();
+        goombas.enableBody = true;
 
