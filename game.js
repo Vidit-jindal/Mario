@@ -67,4 +67,9 @@ onload = function () {
             clouds.create(i, change + game.height / 6, 'cloud');
             change *= -1;
         }
+        
+        grass = game.add.group();
+        for (var i = 130; i < game_length; i+= 290) {
+            grass.create(i, ground_height - steps, 'grass');
+        }
 
