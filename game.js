@@ -76,4 +76,7 @@ onload = function () {
         ground = game.add.tileSprite(0,ground_height, game_length, game.height, 'ground');
         game.physics.arcade.enable(ground);
         ground.body.immovable = true;
+        
+         coins = game.add.group();
+        coins.enableBody = true;
 
