@@ -82,4 +82,7 @@ onload = function () {
         
         goombas = game.add.group();
         goombas.enableBody = true;
+        
+        flag = game.add.sprite(1500, ground_height-168, 'flag');
+        flag.animations.add('celebrate');
 
