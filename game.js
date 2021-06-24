@@ -85,4 +85,10 @@ onload = function () {
         
         flag = game.add.sprite(1500, ground_height-168, 'flag');
         flag.animations.add('celebrate');
+        
+        game.add.sprite(300, ground_height-64, 'pipe2');
+        game.add.sprite(560, ground_height-132, 'castle').scale.setTo(0.75,0.75);
+        game.add.sprite(900, ground_height-128, 'pipe1');
+        game.add.sprite(1200, ground_height-80, 'pipe2').scale.setTo(1.25,1.25);
+
 
