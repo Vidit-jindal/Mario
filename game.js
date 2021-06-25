@@ -94,5 +94,7 @@ onload = function () {
         
         platforms = game.add.group();
         platforms.enableBody = true;
-
+for (i = 0; i < 5; i++) {
+            platforms_array.push([i * 300 + 60]);
+            var cnt1=0, cnt2=0;
 
