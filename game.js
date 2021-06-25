@@ -90,5 +90,9 @@ onload = function () {
         game.add.sprite(560, ground_height-132, 'castle').scale.setTo(0.75,0.75);
         game.add.sprite(900, ground_height-128, 'pipe1');
         game.add.sprite(1200, ground_height-80, 'pipe2').scale.setTo(1.25,1.25);
+        
+        
+        platforms = game.add.group();
+        platforms.enableBody = true;
 
 
