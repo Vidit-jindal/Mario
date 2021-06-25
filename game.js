@@ -98,3 +98,8 @@ for (i = 0; i < 5; i++) {
             platforms_array.push([i * 300 + 60]);
             var cnt1=0, cnt2=0;
 
+for(j=0;j<8;j++) {
+                var pos = i * 300 + j*asset_height + 100;
+                var platform = platforms.create(pos, ground_height - 60, 'tile');
+                platform.body.immovable = true;
+
