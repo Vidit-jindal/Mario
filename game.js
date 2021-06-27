@@ -102,4 +102,11 @@ for(j=0;j<8;j++) {
                 var pos = i * 300 + j*asset_height + 100;
                 var platform = platforms.create(pos, ground_height - 60, 'tile');
                 platform.body.immovable = true;
+    
+    if(j===2 || j===7){
+                    if(Math.random()>0.5) {
+                        var goomba = goombas.create(pos, ground_height - asset_height - 60, 'enemy');
+                        goomba.animations.add('walk', [0, 1]);
+                        goomba.animations.play('walk', 2, true);
+                    }
 
