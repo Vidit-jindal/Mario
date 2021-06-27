@@ -140,3 +140,12 @@ for(j=0;j<8;j++) {
         player = game.add.sprite(16, game.height - 72, 'mario');
         game.physics.arcade.enable(player);
         player.body.gravity.y = 370;
+
+        
+        player.body.collideWorldBounds = true;
+        player.animations.add('walkRight', [1, 2, 3], 10);
+        player.goesRight = true;
+        player.body.enable = false;
+
+        temptext.innerText = text + getString() + text2;
+    }
