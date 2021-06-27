@@ -131,3 +131,12 @@ for(j=0;j<8;j++) {
                         cnt2++;
                     }
                 }
+
+        }
+            }
+            profit.push([cnt1, cnt2]);
+        }
+
+        player = game.add.sprite(16, game.height - 72, 'mario');
+        game.physics.arcade.enable(player);
+        player.body.gravity.y = 370;
