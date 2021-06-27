@@ -110,3 +110,9 @@ for(j=0;j<8;j++) {
                         goomba.animations.play('walk', 2, true);
                     }
 
+        if(Math.random()>0.5) {
+                        goomba = goombas.create(pos, ground_height - asset_height, 'enemy');
+                        goomba.animations.add('walk', [0, 1]);
+                        goomba.animations.play('walk', 2, true);
+                    }
+                }
