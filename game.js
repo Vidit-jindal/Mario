@@ -123,4 +123,11 @@ for(j=0;j<8;j++) {
                         coin.animations.play('spin', 3, true);
                         cnt1++;
                     }
+            
+            if(Math.random()>0.5){
+                        var coin = coins.create(pos, ground_height - asset_height, 'coin');
+                        coin.animations.add('spin', [0,0,1,2]);
+                        coin.animations.play('spin', 3, true);
+                        cnt2++;
+                    }
                 }
