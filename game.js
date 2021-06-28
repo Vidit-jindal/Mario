@@ -149,3 +149,12 @@ for(j=0;j<8;j++) {
 
         temptext.innerText = text + getString() + text2;
     }
+
+    function getString(){
+        ret = '';
+        tmp = [];
+        for(i=0;i<5;i++)
+            ret = ret + '['+String(profit[i][0])+','+String(profit[i][1])+'] ';
+        ret = '[ '+ret+']\n';
+        return ret;
+    }
