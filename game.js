@@ -158,3 +158,11 @@ for(j=0;j<8;j++) {
         ret = '[ '+ret+']\n';
         return ret;
     }
+    
+    function updateState() {
+        game.physics.arcade.collide(player, ground, groundOverlap);
+        game.physics.arcade.collide(player, platforms);
+        game.physics.arcade.collide(goombas, ground);
+        game.physics.arcade.overlap(player, goombas, goombaOverlap);
+        game.physics.arcade.overlap(player, coins, coinOverlap);
+        game.camera.follow(player, Phaser.Camera.FOLLOW_TOPDOWN);
