@@ -174,3 +174,9 @@ for(j=0;j<8;j++) {
             if (player.x+steps >= platforms_array[pos]){
                 if( moves[pos] === "1" && onGround) {
                     onGround = false;
+                    
+                     player.body.velocity.y = -fly_step;
+                    player.animations.stop();
+                }
+                pos++;
+            }
