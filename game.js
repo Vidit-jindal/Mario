@@ -166,3 +166,11 @@ for(j=0;j<8;j++) {
         game.physics.arcade.overlap(player, goombas, goombaOverlap);
         game.physics.arcade.overlap(player, coins, coinOverlap);
         game.camera.follow(player, Phaser.Camera.FOLLOW_TOPDOWN);
+        
+                if (player.body.enable) {
+
+            player.body.velocity.x = move_step;
+            player.play('walkRight');
+            if (player.x+steps >= platforms_array[pos]){
+                if( moves[pos] === "1" && onGround) {
+                    onGround = false;
