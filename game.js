@@ -180,3 +180,8 @@ for(j=0;j<8;j++) {
                 }
                 pos++;
             }
+                    
+                    if (player.body.velocity.y != 0) {
+                if (player.goesRight) player.frame = 5;
+                else player.frame = 12;
+            }
