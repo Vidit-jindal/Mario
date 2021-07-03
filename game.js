@@ -185,3 +185,10 @@ for(j=0;j<8;j++) {
                 if (player.goesRight) player.frame = 5;
                 else player.frame = 12;
             }
+                    
+                    if(player.x >= 1490 && player.y===ground_height-player.height) {
+                player.body.enable = false;
+                flag.animations.play('celebrate', 5);
+            }
+        }
+    }
