@@ -192,3 +192,10 @@ for(j=0;j<8;j++) {
             }
         }
     }
+function groundOverlap() {
+        onGround = true;
+    }
+
+    function coinOverlap(player, coin) {
+        coin.kill();
+    }
