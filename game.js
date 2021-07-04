@@ -199,3 +199,13 @@ function groundOverlap() {
     function coinOverlap(player, coin) {
         coin.kill();
     }
+
+    function goombaOverlap(player, goomba) {
+        goomba.animations.stop();
+        goomba.frame = 2;
+        goomba.body.enable = false;
+        player.body.velocity.y = -fly_step/2;
+        game.time.events.add(Phaser.Timer.SECOND, function() {
+            goomba.kill();
+        });
+    }
