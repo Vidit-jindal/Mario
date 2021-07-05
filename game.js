@@ -209,3 +209,9 @@ function groundOverlap() {
             goomba.kill();
         });
     }
+
+      var refresh = document.getElementById('generate-graph');
+    refresh.onclick = function () {
+        game.state.start("GameState");
+    };
+    
