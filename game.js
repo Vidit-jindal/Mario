@@ -222,3 +222,11 @@ function groundOverlap() {
     text2 = 'Click on solve to get solution';
     var temptext = document.getElementById('temptext');
     var solve = document.getElementById('solve');
+    
+    
+    solve.onclick = function () {
+
+        ans1 = profit[0][0];
+        ans2 = profit[0][1];
+        tmp = [];
+        ans = '';
