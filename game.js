@@ -237,3 +237,9 @@ function groundOverlap() {
             if(ans1>ans2)
                 tmp.push(1);
             else
+
+                tmp.push(0);
+            tans2 = profit[i][1]+Math.max(ans1,ans2);
+            ans1 = tans1;
+            ans2 = tans2;
+        }
