@@ -230,3 +230,10 @@ function groundOverlap() {
         ans2 = profit[0][1];
         tmp = [];
         ans = '';
+
+        for(i=1;i<5;i++){
+            console.log(ans1,ans2);
+            tans1 = ans2+profit[i][0];
+            if(ans1>ans2)
+                tmp.push(1);
+            else
