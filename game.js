@@ -243,3 +243,9 @@ function groundOverlap() {
             ans1 = tans1;
             ans2 = tans2;
         }
+        
+        prev = -1;
+        if(ans1>ans2)
+            prev = 1;
+        else
+            prev = 0;
