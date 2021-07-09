@@ -249,3 +249,15 @@ function groundOverlap() {
             prev = 1;
         else
             prev = 0;
+
+        console.log(ans1,ans2,tmp);
+        tpos = 3;
+        while(tpos>=0){
+            ans = String(prev)+' '+ans;
+            if(prev===1){
+                prev = 0;
+            } else{
+                prev = tmp[tpos];
+            }
+            tpos--;
+        }
