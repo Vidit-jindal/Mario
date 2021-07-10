@@ -261,3 +261,14 @@ function groundOverlap() {
             }
             tpos--;
         }
+
+        if(prev===1)
+            ans = '1 '+ans;
+        else
+            ans = '0 '+ans;
+        temptext.innerText = temptext.innerText + '\n' + ans;
+        moves = ans.split(' ');
+        pos = 0;
+        console.log(moves);
+        player.body.enable = true;
+    };
