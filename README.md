@@ -1,1 +1,1 @@
-# Mario game
+# Mario Game
